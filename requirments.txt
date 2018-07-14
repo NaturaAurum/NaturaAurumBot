@@ -1,0 +1,9 @@
+telepot
+oauth2client
+googletrans
+BeautifulSoup4
+lxml
+PyNaCl
+giphy_client
+pylint
+tweepy
