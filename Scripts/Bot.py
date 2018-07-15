@@ -67,6 +67,8 @@ class ChatHandler(telepot.helper.ChatHandler):
             self.handler = TranslateHandler(self.config)
         elif mode == 4:
             self.handler = GiphyHandler(self.config)
+        else:
+            self.handler = HandlerBase(self.config)
 
 class Bot(telepot.DelegatorBot):
     def __init__(self, token):

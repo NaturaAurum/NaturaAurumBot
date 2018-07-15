@@ -8,7 +8,7 @@ class Config:
             papgoData = config['NaverApi']['papago']
             self.papago_api = PapagoApi(papgoData['client_id'], papgoData['client_secret'])
             self.torrent_config = TorrentConfig(config['torrent'])
-
+            self.giphy_api_key = config["Giphy"]["api_key"]
     
     def get_telegram_data(self):
         return self.telegrma_data;
